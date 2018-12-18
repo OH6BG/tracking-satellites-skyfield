@@ -33,7 +33,7 @@ stations_url = 'https://www.celestrak.com/NORAD/elements/amateur.txt'
 satellites = load.tle(stations_url)
 qth = Topos(lat, lon)
 
-res = "AMATEUR SATELLITE TIMES FOR LOCATION: %s, %s" % (lat, lon)
+res = "AMATEUR SATELLITE TIMES FOR LOCATION: %s, %s\n" % (lat, lon)
 print(res)
 print("Date:", "-".join([str(year), str(month), str(day)]), "\n")
 
